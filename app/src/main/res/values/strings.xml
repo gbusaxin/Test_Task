@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TestTask</string>
+    <string name="table_menu">Таблица</string>
+    <string name="news_menu">Новости</string>
+    <string name="statistic_menu">Статистика</string>
+    <string name="settings_menu">Настройки</string>
+    <string name="image">Image</string>
+    <string name="news_label">НОВОСТИ</string>
+    <string name="name_and_lastname">name and lastname</string>
+    <string name="russia">РОССИЯ</string>
+    <string name="england">АНГЛИЯ</string>
+    <string name="germany">ГЕРМАНИЯ</string>
+    <string name="spain">ИСПАНИЯ</string>
+    <string name="tables">ТАБЛИЦЫ</string>
+</resources>

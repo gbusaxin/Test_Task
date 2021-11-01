@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="400dp"
+        android:layout_height="196dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/image"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bet_match_logo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonToTable"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/my_button_style"
+        android:text="@string/table_menu"
+        android:onClick="onClickToTable"
+        android:textColor="?attr/myColorTheme"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonToNews"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/my_button_style"
+        android:text="@string/news_menu"
+        android:onClick="onClickToNews"
+        android:textColor="?attr/myColorTheme"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonToTable" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonToStatistic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/my_button_style"
+        android:text="@string/statistic_menu"
+        android:onClick="onClickToStatistic"
+        android:textColor="?attr/myColorTheme"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonToNews" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonToSettings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/my_button_style"
+        android:text="@string/settings_menu"
+        android:onClick="onClickToSettings"
+        android:textColor="?attr/myColorTheme"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonToStatistic" />
+</androidx.constraintlayout.widget.ConstraintLayout>
