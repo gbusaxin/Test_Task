@@ -13,7 +13,7 @@ interface ApiService {
     @GET("news.json")
     fun getNewsJson():Single<List<NewsItem>>
 
-    @GET("data_tournament_tables.json")
+    @GET("data_tournament_tables2.json")
     fun getTablesJson():Single<List<TablesInfoList>>
 
     @GET("data_statistic_defense.json")

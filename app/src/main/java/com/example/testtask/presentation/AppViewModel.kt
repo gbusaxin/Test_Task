@@ -70,9 +70,8 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
-                val infoList = it.get(0)
-                val data = infoList.datum
-                Log.e("VIEWMODEL_TABLE_LOAD",data.toString())
+                tableLiveData.value = it
+                Log.e("VIEWMODEL_TABLE_LOAD",it.toString())
             },
                 {
                     Log.d("VIEWMODEL_TABLE_LOAD", it.message.toString())
