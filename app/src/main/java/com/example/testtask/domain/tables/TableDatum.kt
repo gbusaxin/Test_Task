@@ -7,30 +7,30 @@ data class TableDatum(
 
     @SerializedName("Команда")
     @Expose
-    var team: String? = null,
+    val team: String? = null,
 
     @SerializedName("Игры")
     @Expose
-    var games: Int? = 0,
+    val games: Int? = 0,
 
     @SerializedName("В")
     @Expose
-    var b: Int? = 0,
+    val b: Int? = 0,
 
     @SerializedName("Н")
     @Expose
-    var h: Int? = 0,
+    val h: Int? = 0,
 
     @SerializedName("П")
     @Expose
-    var p: Int? = 0,
+    val p: Int? = 0,
 
     @SerializedName("Мячи")
     @Expose
-    var ball: String? = null,
+    val ball: String? = null,
 
     @SerializedName("Очки")
     @Expose
-    var scores: Int? = 0
+    val scores: Int? = 0
 
 )

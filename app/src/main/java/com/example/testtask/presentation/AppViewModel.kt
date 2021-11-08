@@ -67,17 +67,18 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
 
     fun loadTableData() {
         val disposable = ApiFactory.apiService.getTablesJson()
-            .observeOn(Schedulers.io())
-            .subscribeOn(AndroidSchedulers.mainThread())
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
-                val item = it.get(0)
-                Log.d("VIEWMODEL_TABLE_LOAD", item.toString())
+                val infoList = it.get(0)
+                val data = infoList.datum
+                Log.e("VIEWMODEL_TABLE_LOAD",data.toString())
             },
                 {
                     Log.d("VIEWMODEL_TABLE_LOAD", it.message.toString())
                 })
         compositeDisposable.add(disposable)
-    }
+        }
 
     override fun onCleared() {
         super.onCleared()

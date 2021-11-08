@@ -11,5 +11,5 @@ data class TablesInfoList(
 
     @SerializedName("data")
     @Expose
-    var json: JsonObject? = null
+    val datum: List<TableDatum>? = null
 )
