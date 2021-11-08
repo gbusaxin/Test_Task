@@ -16,25 +16,32 @@
         <activity
             android:name=".presentation.SettingsActivity"
             android:exported="true"
-            android:configChanges="uiMode"/>
+            android:configChanges="uiMode"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".presentation.StatisticActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".presentation.TableActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".presentation.ChoseTableActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".presentation.NewsActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".presentation.MainActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".presentation.WelcomeActivity"
             android:exported="true"
+            android:screenOrientation="portrait">
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
